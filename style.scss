@@ -205,9 +205,12 @@ h {
         border-radius: 8px;
         border: none;
         display: flex;
-        padding: 15px;
         @media screen and (min-width:1024px) {
+            padding: 15px;
             padding-left: 40%;
+        }
+        @media screen and (max-width:1023px) {
+            overflow: hidden;
         }
         position: relative;
         &:hover {
@@ -227,8 +230,11 @@ h {
         .card-caption {
             @media screen and (min-width:1024px) {
                 margin-left: 25px;
+                padding: 10px;
             }
-            padding: 10px;
+            @media screen and (max-width:1023px) {
+                padding: 15px;
+            }
             h3 {
                 font-size: 22px
             }

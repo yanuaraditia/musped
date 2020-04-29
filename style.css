@@ -234,13 +234,19 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
   position: relative;
 }
 
 @media screen and (min-width: 1024px) {
   .card-masjid {
+    padding: 15px;
     padding-left: 40%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card-masjid {
+    overflow: hidden;
   }
 }
 
@@ -262,13 +268,16 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
-.card-masjid .card-caption {
-  padding: 10px;
-}
-
 @media screen and (min-width: 1024px) {
   .card-masjid .card-caption {
     margin-left: 25px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card-masjid .card-caption {
+    padding: 15px;
   }
 }
 
