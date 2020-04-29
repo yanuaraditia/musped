@@ -123,6 +123,18 @@ h {
             font-size: 24px;
             margin-bottom: 10px;
         }
+        .col-6 {
+            --sizing: 15px;
+            margin-bottom: var(--sizing);
+            padding-right: var(--sizing);
+            padding-left: var(--sizing);
+            .card {
+                box-shadow: none;
+                h3 {
+                    font-weight: 700;
+                }
+            }
+        }
     }
     &.has-image {
         overflow: hidden;
