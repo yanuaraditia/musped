@@ -190,22 +190,28 @@ h {
         border: none;
         display: flex;
         padding: 15px;
-        padding-left: 40%;
+        @media screen and (min-width:1024px) {
+            padding-left: 40%;
+        }
         position: relative;
         &:hover {
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
         .card-carousel {
-            position: absolute;
-            left: 20px;
-            top: 25px;
-            width: 40%;
+            @media screen and (min-width:1024px) {
+                position: absolute;
+                left: 20px;
+                top: 25px;
+                width: 40%;    
+            }
             img {
                 max-width: 100%;
             }
         }
         .card-caption {
-            margin-left: 25px;
+            @media screen and (min-width:1024px) {
+                margin-left: 25px;
+            }
             padding: 10px;
             h3 {
                 font-size: 22px

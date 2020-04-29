@@ -215,8 +215,13 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  padding-left: 40%;
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-masjid {
+    padding-left: 40%;
+  }
 }
 
 .card-masjid:hover {
@@ -224,11 +229,13 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.card-masjid .card-carousel {
-  position: absolute;
-  left: 20px;
-  top: 25px;
-  width: 40%;
+@media screen and (min-width: 1024px) {
+  .card-masjid .card-carousel {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 40%;
+  }
 }
 
 .card-masjid .card-carousel img {
@@ -236,8 +243,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-masjid .card-caption {
-  margin-left: 25px;
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-masjid .card-caption {
+    margin-left: 25px;
+  }
 }
 
 .card-masjid .card-caption h3 {
