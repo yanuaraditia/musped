@@ -733,9 +733,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimony-card-body .message {
-  font-size: 24px;
   font-style: italic;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimony-card-body .message {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .testimony-card-body .message {
+    font-size: 18px;
+  }
 }
 
 .testimony-card-body .name h5 {

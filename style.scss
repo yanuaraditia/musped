@@ -651,7 +651,12 @@ h {
         }
         &-body {
             .message {
-                font-size: 24px;
+                @media screen and (min-width:1024px) {
+                    font-size: 24px;
+                }
+                @media screen and (max-width:1023px) {
+                    font-size: 18px;
+                }
                 font-style: italic;
                 margin-bottom: 5px;
             }
